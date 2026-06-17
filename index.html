@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoViewer — Global Ecosystems Reference Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="./" class="nav-logo">Eco<span>Viewer</span></a>
+    <ul class="nav-links">
+      <li><a href="./" class="active">Home</a></li>
+      <li><a href="about/">About</a></li>
+      <li><a href="team/">Team</a></li>
+      <li><a href="resources/">Resources</a></li>
+      <li><a href="tutorials/">Tutorials</a></li>
+    </ul>
+    <a href="app/" class="nav-cta">Launch App →</a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob b1"></div>
+      <div class="hero-blob b2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="dot"></span> Global · Open Access · Powered by GBIF</p>
+      <h1 class="hero-title">
+        A reference library<br />
+        <em>for the living world</em>
+      </h1>
+      <p class="hero-sub">
+        EcoViewer is an open-access environmental reference platform combining GBIF species
+        occurrence data with global environmental layers — to help ecologists, researchers,
+        and conservation practitioners understand ecosystems anywhere on Earth.
+      </p>
+      <div class="hero-actions">
+        <a href="app/" class="btn-primary">Launch EcoViewer</a>
+        <a href="tutorials/" class="btn-ghost">Watch Demo</a>
+      </div>
+    </div>
+    <div class="hero-scroll">scroll <span class="scroll-line"></span></div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="stat"><span class="stat-num">Global</span><span class="stat-label">Coverage</span></div>
+    <div class="stat-div"></div>
+    <div class="stat"><span class="stat-num">GBIF</span><span class="stat-label">Powered</span></div>
+    <div class="stat-div"></div>
+    <div class="stat"><span class="stat-num">Multi</span><span class="stat-label">Source Data</span></div>
+    <div class="stat-div"></div>
+    <div class="stat"><span class="stat-num">Open</span><span class="stat-label">Access</span></div>
+  </section>
+
+  <!-- WHAT IS -->
+  <section class="section what">
+    <div class="section-inner">
+      <div class="what-text">
+        <p class="section-tag">// What is EcoViewer</p>
+        <h2 class="section-title">Biodiversity &amp; environmental<br /><em>context, anywhere</em></h2>
+        <p class="section-body">
+          EcoViewer brings together GBIF species occurrence data and global environmental
+          datasets into a single, unified reference platform. Designed for ecologists,
+          remote sensing specialists, and conservation practitioners who need reliable
+          ecological context for landscape analysis, imagery annotation, and biodiversity research.
+        </p>
+        <a href="about/" class="link-arrow">About the project →</a>
+      </div>
+      <div class="what-cards">
+        <div class="feature-card">
+          <div class="card-icon">◎</div>
+          <h3>GBIF Integration</h3>
+          <p>Ecosystem indicator species occurrence records from GBIF, matched to ecosystem types and biomes using peer-reviewed ecological literature.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">⬡</div>
+          <h3>Environmental Layers</h3>
+          <p>Climate, vegetation, water, and fire data harmonised from verified global repositories into a single queryable reference.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">◈</div>
+          <h3>Global Reach</h3>
+          <p>High-resolution coverage across all biomes and continents, powered by Google Earth Engine's planetary-scale infrastructure.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">⬕</div>
+          <h3>Open Access</h3>
+          <p>No login, no licence fees. Freely accessible for scientific, educational, and conservation use anywhere in the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW SECTION -->
+  <section class="section preview">
+    <div class="preview-top">
+      <div class="preview-label">
+        <p class="section-tag">// App Preview</p>
+        <h2 class="section-title">Explore the<br /><em>interface</em></h2>
+      </div>
+      <div class="preview-desc">
+        <p class="section-body">Interact with GBIF species occurrences and global environmental layers directly in your browser. Click anywhere on the map to get instant ecological context for that location. No installation required.</p>
+        <a href="app/" class="btn-primary" style="margin-top:1.5rem; display:inline-block;">Open Full App →</a>
+      </div>
+    </div>
+    <div class="preview-frame preview-frame--wide">
+      <div class="frame-bar">
+        <span class="fb r"></span><span class="fb y"></span><span class="fb g"></span>
+        <span class="frame-url">ecoviewer.org/app</span>
+      </div>
+      <div class="frame-content">
+        <iframe
+          src="https://geo-global-ecosystems-atlas.projects.earthengine.app/view/ecoviewer"
+          title="EcoViewer App"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="section usecases">
+    <div class="section-inner centered">
+      <p class="section-tag">// Who uses EcoViewer</p>
+      <h2 class="section-title">Built for the field,<br /><em>and the lab</em></h2>
+    </div>
+    <div class="usecase-grid">
+      <div class="usecase-card">
+        <span class="uc-num">01</span>
+        <h3>Ecologists &amp; Researchers</h3>
+        <p>Access consistent, reproducible environmental and biodiversity context for comparative studies, habitat assessment, and longitudinal ecosystem analysis.</p>
+      </div>
+      <div class="usecase-card">
+        <span class="uc-num">02</span>
+        <h3>Remote Sensing Analysts</h3>
+        <p>Validate and annotate satellite imagery with high-confidence ecological reference data, grounded in peer-reviewed global datasets.</p>
+      </div>
+      <div class="usecase-card">
+        <span class="uc-num">03</span>
+        <h3>Conservation Practitioners</h3>
+        <p>Characterise landscapes, explore species occurrences, and monitor ecosystem condition across large territories at continental scale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="cta-inner">
+      <h2>Ready to explore<br /><em>the living world?</em></h2>
+      <a href="app/" class="btn-primary large">Launch EcoViewer</a>
+    </div>
+    <div class="cta-bg"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Eco<em>Viewer</em></span>
+        <p>A multi-source environmental reference library for ecological characterization and satellite imagery annotation.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="./">Home</a>
+          <a href="about/">About</a>
+          <a href="team/">Team</a>
+          <a href="resources/">Resources</a>
+          <a href="tutorials/">Tutorials</a>
+          <a href="app/">Launch App</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="legal/terms/">Terms of Service</a>
+          <a href="legal/privacy/">Privacy Policy</a>
+          <a href="legal/cookies/">Cookie Policy</a>
+          <a href="legal/disclaimer/">Disclaimer</a>
+        </div>
+        <div class="footer-col">
+          <h4>External</h4>
+          <a href="https://earthengine.google.com" target="_blank" rel="noopener">Google Earth Engine</a>
+          <a href="https://earthengine.google.com/terms" target="_blank" rel="noopener">GEE Terms</a>
+          <a href="https://www.globalecologylab.org/" target="_blank" rel="noopener">Global Ecology Lab</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 EcoViewer. All rights reserved.</span>
+      <span class="footer-built">Built on Google Earth Engine</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

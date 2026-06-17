@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorials — EcoViewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="../" class="nav-logo">Eco<span>Viewer</span></a>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../team/">Team</a></li>
+      <li><a href="../resources/">Resources</a></li>
+      <li><a href="../tutorials/" class="active">Tutorials</a></li>
+    </ul>
+    <a href="../app/" class="nav-cta">Launch App →</a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-tag">// Tutorials</p>
+      <h1>Get started with<br /><em>EcoViewer</em></h1>
+      <p class="lead">
+        Everything you need to start using EcoViewer — a quick-start guide,
+        a walkthrough video, the source code, and answers to common questions.
+      </p>
+    </div>
+  </section>
+
+  <!-- QUICK START -->
+  <section class="section tut-quickstart">
+    <div class="section-inner">
+      <div class="tut-qs-text">
+        <p class="section-tag">// Quick Start</p>
+        <h2 class="section-title">Up and running<br /><em>in four steps</em></h2>
+        <p class="section-body">No installation or account required. EcoViewer runs entirely in your browser through Google Earth Engine.</p>
+        <a href="../app/" class="btn-primary" style="margin-top: 1.75rem; display: inline-block;">Open EcoViewer →</a>
+      </div>
+      <div class="tut-steps">
+        <div class="tutorial-step">
+          <span class="tut-step-num">01</span>
+          <div>
+            <h3>Open the app</h3>
+            <p>Navigate to the EcoViewer app. The map will load centred on a default location. No sign-in is needed to browse reference layers.</p>
+          </div>
+        </div>
+        <div class="tutorial-step">
+          <span class="tut-step-num">02</span>
+          <div>
+            <h3>Pick a location</h3>
+            <p>Click anywhere on the map, or paste decimal coordinates (latitude, longitude) into the location box to jump to a specific point of interest.</p>
+          </div>
+        </div>
+        <div class="tutorial-step">
+          <span class="tut-step-num">03</span>
+          <div>
+            <h3>Switch thematic panels</h3>
+            <p>Switch between data panels using the Analysis Theme dropdown. Each panel gives you a different lens on the location — from biodiversity records to environmental conditions.</p>
+          </div>
+        </div>
+        <div class="tutorial-step">
+          <span class="tut-step-num">04</span>
+          <div>
+            <h3>Read the statistics</h3>
+            <p>Point statistics and dynamic charts update automatically for your selected location. Scroll down in the panel to see seasonal trends and frequency distributions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section tut-video">
+    <div class="tut-video-inner">
+      <div class="tut-video-label">
+        <p class="section-tag">// Demo</p>
+        <h2 class="section-title">Watch the<br /><em>walkthrough</em></h2>
+        <p class="section-body">A guided tour of the EcoViewer interface, showing how to explore species occurrences, environmental layers, and the analytical tools available for any location on Earth.</p>
+      </div>
+      <div class="tut-video-frame">
+        <!-- Replace the div below with a real iframe once a video is available -->
+        <!-- Example for YouTube: -->
+        <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="EcoViewer Demo" allowfullscreen></iframe> -->
+        <div class="tut-video-placeholder">
+          <span class="tut-video-icon">▶</span>
+          <p>Demo video coming soon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB REPOS -->
+  <section class="section tut-repos">
+    <div class="section-inner centered">
+      <p class="section-tag">// Source Code</p>
+      <h2 class="section-title">Open source,<br /><em>on GitHub</em></h2>
+      <p class="section-body" style="text-align: center; margin: 0 auto 3.5rem;">
+        All EcoViewer code is publicly available under open-source licences.
+        Browse, fork, or contribute via the repositories below.
+      </p>
+    </div>
+    <div class="repo-grid">
+
+      <a href="https://github.com/ecoviewer/ecoviewer-app" target="_blank" rel="noopener" class="repo-card">
+        <div class="repo-card-top">
+          <span class="repo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </span>
+          <span class="repo-tag">JavaScript</span>
+        </div>
+        <h3>EcoViewer App</h3>
+        <p>Google Earth Engine JavaScript code powering the EcoViewer application — all thematic panels, data layers, and UI logic.</p>
+        <div class="repo-meta">
+          <span class="repo-lang"><em style="background:#f1e05a"></em>JavaScript</span>
+          <span>MIT License</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/ecoviewer/ecoviewer-gbif-processing" target="_blank" rel="noopener" class="repo-card">
+        <div class="repo-card-top">
+          <span class="repo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </span>
+          <span class="repo-tag">Python</span>
+        </div>
+        <h3>GBIF Processing</h3>
+        <p>Code for extracting and processing GBIF species occurrence data using BigQuery and the asynchronous pygbif API, matched to ecosystem types through an ecosystem indicator species approach.</p>
+        <div class="repo-meta">
+          <span class="repo-lang"><em style="background:#3572A5"></em>Python</span>
+          <span>MIT License</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/ecoviewer/ecoviewer-website" target="_blank" rel="noopener" class="repo-card">
+        <div class="repo-card-top">
+          <span class="repo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </span>
+          <span class="repo-tag">HTML / CSS</span>
+        </div>
+        <h3>Website</h3>
+        <p>The source code for this website — built with plain HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
+        <div class="repo-meta">
+          <span class="repo-lang"><em style="background:#e34c26"></em>HTML</span>
+          <span>MIT License</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section tut-faq">
+    <div class="section-inner">
+      <div class="faq-text">
+        <p class="section-tag">// FAQ</p>
+        <h2 class="section-title">Common<br /><em>questions</em></h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <h3>Do I need a Google account to use EcoViewer?</h3>
+          <p>No. EcoViewer is freely accessible without any login. Some advanced Google Earth Engine features may prompt for a Google account, but browsing all reference layers requires none.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is the code free to reuse?</h3>
+          <p>Yes. All EcoViewer repositories are published under the MIT licence, which allows free use, modification, and redistribution with attribution.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do I cite EcoViewer in my research?</h3>
+          <p>Please cite the relevant datasets from the <a href="../resources/">Resources page</a> alongside the EcoViewer platform. A formal citation format for the platform itself will be added here once a reference publication is available.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I request a new dataset or feature?</h3>
+          <p>Yes — open an issue on the <a href="https://github.com/ecoviewer/ecoviewer-app" target="_blank" rel="noopener">EcoViewer App repository</a> describing the dataset or feature you'd like to see. We review all suggestions.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why is coverage limited in some regions?</h3>
+          <p>EcoViewer depends on publicly available global datasets. Coverage quality varies by region and data source. We are continuously integrating new datasets to improve global coverage.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>The app isn't loading — what should I do?</h3>
+          <p>EcoViewer runs on Google Earth Engine infrastructure. If the app is unresponsive, check the <a href="https://status.earthengine.google.com" target="_blank" rel="noopener">Earth Engine status page</a> for any ongoing outages, then try refreshing.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE -->
+  <section class="cta-band">
+    <div class="cta-inner">
+      <h2>Want to contribute<br /><em>to EcoViewer?</em></h2>
+      <p style="color: rgba(255,255,255,0.75); font-family: var(--sans); font-size: 1rem; margin-bottom: 2rem; max-width: 480px; line-height: 1.7;">
+        Open an issue, submit a pull request, or suggest a new dataset.
+        All contributions are welcome — from bug reports to new data layers.
+      </p>
+      <a href="https://github.com/ecoviewer" target="_blank" rel="noopener" class="btn-primary large">View on GitHub</a>
+    </div>
+    <div class="cta-bg"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Eco<em>Viewer</em></span>
+        <p>A multi-source environmental reference library for ecological characterization and satellite imagery annotation.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="../">Home</a>
+          <a href="../about/">About</a>
+          <a href="../team/">Team</a>
+          <a href="../resources/">Resources</a>
+          <a href="../tutorials/">Tutorials</a>
+          <a href="../app/">Launch App</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="../legal/terms/">Terms of Service</a>
+          <a href="../legal/privacy/">Privacy Policy</a>
+          <a href="../legal/cookies/">Cookie Policy</a>
+          <a href="../legal/disclaimer/">Disclaimer</a>
+        </div>
+        <div class="footer-col">
+          <h4>External</h4>
+          <a href="https://earthengine.google.com" target="_blank" rel="noopener">Google Earth Engine</a>
+          <a href="https://earthengine.google.com/terms" target="_blank" rel="noopener">GEE Terms</a>
+          <a href="https://www.globalecologylab.org/" target="_blank" rel="noopener">Global Ecology Lab</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 EcoViewer. All rights reserved.</span>
+      <span class="footer-built">Built on Google Earth Engine</span>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

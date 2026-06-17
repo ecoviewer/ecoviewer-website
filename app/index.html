@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App — EcoViewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="app-page">
+
+  <nav class="app-nav">
+    <a href="../" class="nav-logo">Eco<span>Viewer</span></a>
+    <ul class="app-nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../team/">Team</a></li>
+      <li><a href="../resources/">Resources</a></li>
+      <li><a href="../tutorials/">Tutorials</a></li>
+      <li><a href="../app/" class="active">App</a></li>
+    </ul>
+    <a href="https://geo-global-ecosystems-atlas.projects.earthengine.app/view/ecoviewer"
+       target="_blank" rel="noopener" class="app-nav-open">Open in Earth Engine ↗</a>
+  </nav>
+
+  <div class="app-frame">
+    <iframe
+      src="https://geo-global-ecosystems-atlas.projects.earthengine.app/view/ecoviewer"
+      title="EcoViewer — Global Ecosystems Reference Library"
+      allowfullscreen
+      loading="eager">
+    </iframe>
+  </div>
+
+  <script src="../main.js"></script>
+</body>
+</html>
