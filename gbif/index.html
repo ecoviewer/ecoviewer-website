@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GBIF Data — EcoViewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="../" class="nav-logo">Eco<span>Viewer</span></a>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../team/">Team</a></li>
+      <li><a href="../gbif/" class="active">GBIF</a></li>
+      <li><a href="../environmental-layers/">Environmental Layers</a></li>
+      <li><a href="../tutorials/">Tutorials</a></li>
+    </ul>
+    <a href="../app/" class="nav-cta">Launch App →</a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-tag">// GBIF Data</p>
+      <h1>Ecosystem indicator species<br /><em>from GBIF</em></h1>
+      <p class="lead">
+        How EcoViewer uses the Global Biodiversity Information Facility to bring
+        species occurrence data into ecological context — matched to Ecosystem
+        Functional Groups from the IUCN Global Ecosystem Typology.
+      </p>
+    </div>
+  </section>
+
+  <!-- GBIF ECOSYSTEM INDICATOR SPECIES -->
+  <section class="section gbif-why">
+    <div class="section-inner">
+      <div class="gbif-why-text">
+        <p class="section-tag">// GBIF Ecosystem Indicator Species</p>
+        <h2 class="section-title">Bridging species records<br /><em>and ecosystems</em></h2>
+        <p class="section-body">
+          The <a href="https://www.gbif.org/" target="_blank" rel="noopener">Global Biodiversity
+          Information Facility (GBIF)</a> is the world's largest open repository of biodiversity
+          data — hundreds of millions of species occurrence records contributed by institutions,
+          researchers, and citizen scientists worldwide.
+        </p>
+        <p class="section-body" style="margin-top:1rem;">
+          In EcoViewer, GBIF data serves a specific purpose: placing species occurrences
+          in their ecosystem context. Rather than treating each record in isolation, EcoViewer
+          links occurrence data to the <strong>Ecosystem Functional Group</strong> it belongs
+          to — giving users a way to explore not just where a species was observed, but what
+          kind of ecosystem that location likely represents.
+        </p>
+        <p class="section-body" style="margin-top:1rem;">
+          Not all GBIF records can be meaningfully linked to a specific ecosystem. EcoViewer
+          focuses on <strong>ecosystem indicator species</strong> — a carefully filtered subset
+          whose occurrences can be reliably matched to an Ecosystem Functional Group or biome from the IUCN Global Ecosystem Typology.
+        </p>
+      </div>
+      <div class="gbif-why-concepts">
+        <div class="gbif-concept">
+          <div class="gbif-concept-header">
+            <span class="gbif-concept-code">EFG</span>
+            <h3>Ecosystem Functional Groups</h3>
+          </div>
+          <p>The <a href="https://global-ecosystems.org/" target="_blank" rel="noopener">IUCN Global
+          Ecosystem Typology (GET)</a> classifies all of Earth's ecosystems into a six-level
+          hierarchy. An <strong>Ecosystem Functional Group (EFG)</strong> is the third level — a
+          group of related ecosystems within a biome sharing common ecological drivers and biotic
+          traits. For example, intertidal mangrove forests (MFT1.2) are an EFG: distinct from
+          tropical rainforests, yet sharing the coastal realm with saltmarshes and river deltas.</p>
+        </div>
+        <div class="gbif-concept">
+          <div class="gbif-concept-header">
+            <span class="gbif-concept-code">EIS</span>
+            <h3>Ecosystem Indicator Species</h3>
+          </div>
+          <p>We define ecosystem indicator species as species whose physiological characteristics
+          allow them to thrive in specific Ecosystem Functional Groups and help shape those
+          ecosystems. <em>Rhizophora</em> spp. (mangroves), for example, have adaptations 
+          that allow them to survive at the interface of marine, freshwater, and terrestrial realms; 
+          because they actively build and maintain intertidal forests, their presence strongly signals the MFT1.2 EFG.
+          <br/><br/>
+          <strong>Important caveat:</strong> the presence of an ecosystem indicator species
+          does not mean that species is <em>only</em> found in that Ecosystem Functional Group,
+          nor that the ecosystem is definitively present at that location. Rather, it indicates
+          a higher likelihood of finding that ecosystem type there. Occurrence records should
+          be interpreted as signals, not definitive maps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATCHING + LITERATURE -->
+  <section class="section gbif-matching">
+    <div class="gbif-matching-inner">
+
+      <div class="gbif-matching-intro">
+        <p class="section-tag">// Species–EFG matching</p>
+        <h2 class="section-title">Matching indicator species<br /><em>to ecosystem types</em></h2>
+        <p class="section-body" style="max-width: 760px;">
+          Each indicator species in EcoViewer is matched to an Ecosystem Functional Group 
+          — or to a broader biome where a specific EFG cannot be confidently determined —
+          using peer-reviewed ecological literature. Matching draws on published species
+          distribution studies, habitat association research, and biogeographic classifications
+          relative to the IUCN Global Ecosystem Typology. A selection of key references is listed below.
+        </p>
+      </div>
+
+      <div class="data-table-container" style="margin-top:2.5rem;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Authors</th>
+              <th>Year</th>
+              <th>Journal</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td-name">An Update of Wallace's Zoogeographic Regions of the World</td>
+              <td>Holt, B.G. et al.</td>
+              <td class="td-year">2013</td>
+              <td><em>Science</em></td>
+              <td class="td-links"><a href="https://doi.org/10.1126/science.1228282" target="_blank" rel="noopener">DOI ↗</a></td>
+            </tr>
+            <tr>
+              <td class="td-name">Terrestrial Ecoregions of the World: A New Map of Life on Earth</td>
+              <td>Olson, D.M. et al.</td>
+              <td class="td-year">2001</td>
+              <td><em>BioScience</em></td>
+              <td class="td-links"><a href="https://doi.org/10.1641/0006-3568(2001)051[0933:TNMOGE]2.0.CO;2" target="_blank" rel="noopener">DOI ↗</a></td>
+            </tr>
+            <tr>
+              <td class="td-name">A Typology for the Classification, Description and Valuation of Ecosystem Functions, Goods and Services</td>
+              <td>de Groot, R.S. et al.</td>
+              <td class="td-year">2002</td>
+              <td><em>Ecological Economics</em></td>
+              <td class="td-links"><a href="https://doi.org/10.1016/S0921-8009(02)00089-7" target="_blank" rel="noopener">DOI ↗</a></td>
+            </tr>
+            <tr>
+              <td class="td-name">The diversity of post-fire regeneration strategies in the cerrado ground layer</td>
+              <td>Pilon, N.A.L. et al.</td>
+              <td class="td-year">2020</td>
+              <td><em>Journal of Ecology</em></td>
+              <td class="td-links"><a href="#" class="td-placeholder">DOI ↗</a></td>
+            </tr>
+            <tr>
+              <td class="td-name">Species Composition, Distribution, and Diversity of Woody Species in a Tropical Dry Forest of India</td>
+              <td>Chaturvedi, R.K. et al.</td>
+              <td class="td-year">2014</td>
+              <td><em>Journal of Sustainable Forestry</em></td>
+              <td class="td-links"><a href="#" class="td-placeholder">DOI ↗</a></td>
+            </tr>
+            <!-- Add further references below -->
+          </tbody>
+        </table>
+      </div>
+
+      <p class="res-note">
+        This is a selection of key references. The full list of literature used in the GBIF
+        ecosystem indicator species methodology is maintained in the
+        <a href="https://github.com/ecoviewer/ecoviewer-gbif-processing" target="_blank" rel="noopener">GBIF Processing repository</a>.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- PIPELINE + EFG CHART -->
+  <section class="section gbif-pipeline">
+    <div class="gbif-pipeline-inner">
+
+      <div class="gbif-pipeline-intro">
+        <p class="section-tag">// Data pipeline</p>
+        <h2 class="section-title">From raw GBIF<br /><em>to indicator species</em></h2>
+        <p class="section-body" style="max-width:760px;">
+          Raw GBIF plant occurrence records for the last ten years number in the tens of millions.
+          EcoViewer processes them through a multi-step pipeline that filters, classifies, and
+          validates each record against ecological, spatial, and environmental constraints —
+          reducing the dataset to a high-confidence subset of ecosystem indicator species
+          occurrences. The full pipeline code is open source and available in the
+          <a href="https://github.com/ecoviewer/ecoviewer-gbif-processing" target="_blank" rel="noopener">GBIF processing repository</a>.
+        </p>
+      </div>
+
+      <div class="gbif-pipeline-body">
+        <div class="gbif-pipeline-steps">
+          <div class="pipeline-step">
+            <span class="pipeline-num">01</span>
+            <div>
+              <h3>Spatial Thinning</h3>
+              <p>Starting with ~172 million raw records from the <a href="https://doi.org/10.15468/dl.sdhuv9" target="_blank" rel="noopener">GBIF dataset</a>, 
+              occurrences are spatially thinned through deduplication and gridding. 
+              This process removes duplicate and overly dense records to mitigate spatial bias from heavily sampled regions, 
+              reducing the dataset to ~27 million records.</p>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <span class="pipeline-num">02</span>
+            <div>
+              <h3>EFG &amp; Biome Matching</h3>
+              <p>Each species is matched to its corresponding Ecosystem Functional Group or
+              biome using a curated indicator species database, aligned against the IUCN
+              Global Ecosystem Typology taxonomy.</p>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <span class="pipeline-num">03</span>
+            <div>
+              <h3>Anthropogenic Reclassification</h3>
+              <p>Records falling within urban, industrial, plantation, or cropland environments
+              are reclassified. These land cover types are explicitly reassigned to anthropogenic ecosystem categories (T7 biome)
+              to avoid confounding human-modified landscapes with natural ecosystem signals.</p>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <span class="pipeline-num">04</span>
+            <div>
+              <h3>Latitudinal Boundary Enforcement</h3>
+              <p>Physical biome boundaries are enforced using latitudinal constraints. Tropical
+              EFGs are restricted to the tropics, boreal to higher latitudes, and polar to polar
+              regions. Records outside their expected range are reassigned or dropped.</p>
+            </div>
+          </div>
+          <div class="pipeline-step">
+            <span class="pipeline-num">05</span>
+            <div>
+              <h3>Environmental Filtering</h3>
+              <p>SRTM elevation and a global aridity index sampled via Google Earth Engine
+              at 30 m resolution further validate each record. Alpine species outside their
+              elevation range, dryland species in humid environments, and similar mismatches
+              are corrected or removed.</p>
+            </div>
+          </div>
+          <div class="pipeline-step pipeline-step--last">
+            <span class="pipeline-num">06</span>
+            <div>
+              <h3>Taxonomic Corrections</h3>
+              <p>A final set of taxonomic fixes is applied — for example, reassigning
+              <em>Avicennia</em> occurrences to MFT1.2, and removing genera where EFG
+              matching is unreliable. This completes the pipeline, resulting in a dataset 
+              of 1,270,401 validated occurrence records.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gbif-chart-block">
+          <p class="section-body" style="max-width:760px;">
+            The chart below shows the distribution of the 1,270,401 indicator species occurrence
+            records across Ecosystem Functional Groups and biomes in the current dataset.
+            Each bar represents a biome, subdivided by EFG. Biome-level matches — where a
+            specific EFG could not be confidently determined — are shown as a separate segment
+            within the biome bar.
+          </p>
+          <div class="gbif-bar-wrap" style="margin-top:2rem;">
+            <p class="chart-label">// Number of indicator species records per biome and EFG</p>
+            <canvas id="efgBarChart"></canvas>
+            <div class="chart-legend" id="efgLegend"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Eco<em>Viewer</em></span>
+        <p>A multi-source environmental reference library for comprehensive ecosystem analysis and geospatial data enhancement.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="../">Home</a>
+          <a href="../about/">About</a>
+          <a href="../team/">Team</a>
+          <a href="../gbif/">GBIF</a>
+          <a href="../environmental-layers/">Environmental Layers</a>
+          <a href="../tutorials/">Tutorials</a>
+          <a href="../app/">Launch App</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="../legal/terms/">Terms of Service</a>
+          <a href="../legal/privacy/">Privacy Policy</a>
+          <a href="../legal/cookies/">Cookie Policy</a>
+          <a href="../legal/disclaimer/">Disclaimer</a>
+        </div>
+        <div class="footer-col">
+          <h4>External</h4>
+          <a href="https://earthengine.google.com" target="_blank" rel="noopener">Google Earth Engine</a>
+          <a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a>
+          <a href="https://global-ecosystems.org/" target="_blank" rel="noopener">Global Ecosystem Typology</a>
+          <a href="https://www.globalecologylab.org/" target="_blank" rel="noopener">Global Ecology Lab</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EcoViewer. All rights reserved.</span>
+      <span class="footer-built">Built on Google Earth Engine</span>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="gbif-charts.js"></script>
+</body>
+</html>

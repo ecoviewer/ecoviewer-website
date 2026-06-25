@@ -17,7 +17,8 @@
       <li><a href="../">Home</a></li>
       <li><a href="../about/">About</a></li>
       <li><a href="../team/">Team</a></li>
-      <li><a href="../resources/" class="active">Resources</a></li>
+      <li><a href="../gbif/">GBIF</a></li>
+      <li><a href="../environmental-layers/" class="active">Environmental Layers</a></li>
       <li><a href="../tutorials/">Tutorials</a></li>
     </ul>
     <a href="../app/" class="nav-cta">Launch App →</a>
@@ -28,8 +29,32 @@
 
   <!-- PAGE HERO -->
   <section class="page-hero">
+
+    <!-- Notice card -->
+    <div style="
+      background-color: #fffaf0; 
+      border-left: 4px solid #d97706; 
+      border-radius: 4px; 
+      padding: 12px 16px; 
+      margin: 20px auto; /* 'auto' centers the block itself horizontally */
+      max-width: 400px;  /* Kept it narrow so it looks tight and clean when centered */
+      font-family: 'Plus Jakarta Sans', sans-serif; 
+      font-size: 14px;
+      color: #78350f;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Centers the content inside the card */
+      gap: 8px;
+      box-sizing: border-box;
+    ">
+      <span>⚠️</span>
+      <span><strong>Notice:</strong> This page is currently being updated.</span>
+    </div>
+    <!-- Notice card -->
+
     <div class="page-hero-inner">
-      <p class="section-tag">// Resources</p>
+      <p class="section-tag">// Environmental Layers</p>
       <h1>Data, methods,<br /><em>and references</em></h1>
       <p class="lead">
         An overview of how EcoViewer is structured, the biodiversity and environmental
@@ -115,131 +140,6 @@
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- GBIF SECTION -->
-  <section class="section res-gbif">
-    <div class="res-table-wrap">
-      <div class="res-gbif-header">
-        <div class="res-gbif-text">
-          <p class="section-tag">// GBIF Ecosystem Indicator Species</p>
-          <h2 class="section-title">Connecting biodiversity<br /><em>to ecosystem types</em></h2>
-          <p class="section-body">
-            EcoViewer integrates species occurrence records from the
-            <a href="https://www.gbif.org/" target="_blank" rel="noopener">Global Biodiversity Information Facility (GBIF)</a>
-            — the largest open repository of biodiversity data in the world. Not all species in GBIF
-            can be linked to a specific ecosystem type. EcoViewer focuses on
-            <strong>ecosystem indicator species</strong> — species whose physiological characteristics
-            allow them to be successful in specific
-            <a href="https://global-ecosystems.org/" target="_blank" rel="noopener">Ecosystem Functional Groups</a>
-            and help shape those ecosystems.
-          </p>
-          <p class="section-body" style="margin-top:1rem;">
-            Each occurrence record is matched to an Ecosystem Functional Group, or to a broader
-            biome where a specific group cannot be reliably determined. The methodology is built
-            on a growing body of peer-reviewed literature. A selection of key references is listed below.
-          </p>
-        </div>
-
-        <div class="res-gbif-callout">
-          <div class="res-gbif-callout-block">
-            <p class="res-callout-label">// What is an Ecosystem Functional Group?</p>
-            <p class="res-callout-body">
-              The <a href="https://global-ecosystems.org/" target="_blank" rel="noopener">IUCN Global Ecosystem Typology (GET)</a>
-              classifies all of Earth's ecosystems into a six-level hierarchy. An
-              <strong>Ecosystem Functional Group</strong> is the third level — a group of related
-              ecosystems within a biome that share common ecological drivers, promoting similar
-              biotic traits. For example, mangrove forests are an Ecosystem Functional Group:
-              distinct from tropical rainforests or seagrass beds, yet sharing the intertidal
-              realm with other coastal wetland types.
-            </p>
-          </div>
-
-          <div class="res-gbif-callout-block" style="margin-top: 1rem;">
-            <p class="res-callout-label">// What is an ecosystem indicator species?</p>
-            <p class="res-callout-body">
-              We define ecosystem indicator species as species whose physiological characteristics
-              allow them to thrive in specific Ecosystem Functional Groups and help shape those
-              ecosystems. For example, mangrove tree species (<em>Rhizophora</em> spp.) have
-              adaptations that allow them to survive at the interface of marine, freshwater, and
-              terrestrial realms — and in doing so, they build and maintain intertidal forests.
-            </p>
-            <p class="res-callout-body" style="margin-top: 0.6rem;">
-              <strong>Important caveat:</strong> the presence of an ecosystem indicator species
-              does not mean that species is <em>only</em> found in that Ecosystem Functional Group,
-              nor that the ecosystem is definitively present at that location. Rather, it indicates
-              a higher likelihood of finding that ecosystem type there. Occurrence records should
-              be interpreted as signals, not definitive maps.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="data-table-container">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Authors</th>
-              <th>Year</th>
-              <th>Journal / Source</th>
-              <th>DOI / Link</th>
-            </tr>
-          </thead>
-          <tbody>
-
-            <tr>
-              <td class="td-name">An Update of Wallace's Zoogeographic Regions of the World</td>
-              <td>Holt, B.G. et al.</td>
-              <td class="td-year">2013</td>
-              <td><em>Science</em></td>
-              <td class="td-links"><a href="https://doi.org/10.1126/science.1228282" target="_blank" rel="noopener">DOI ↗</a></td>
-            </tr>
-
-            <tr>
-              <td class="td-name">Terrestrial Ecoregions of the World: A New Map of Life on Earth: A new global map of terrestrial ecoregions provides an innovative tool for conserving biodiversity</td>
-              <td>Olson, D.M. et al.</td>
-              <td class="td-year">2001</td>
-              <td><em>BioScience</em></td>
-              <td class="td-links"><a href="https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2" target="_blank" rel="noopener">DOI ↗</a></td>
-            </tr>
-
-            <tr>
-              <td class="td-name">A Typology for the Classification, Description and Valuation of Ecosystem Functions, Goods and Services</td>
-              <td>de Groot, R.S. et al.</td>
-              <td class="td-year">2002</td>
-              <td><em>Ecological Economics</em></td>
-              <td class="td-links"><a href="https://doi.org/10.1016/S0921-8009(02)00089-7" target="_blank" rel="noopener">DOI ↗</a></td>
-            </tr>
-
-            <tr>
-              <td class="td-name">The diversity of post-fire regeneration strategies in the cerrado ground layer</td>
-              <td>Pilon, N.A.L. et al.</td>
-              <td class="td-year">2020</td>
-              <td><em>Journal of Ecology</em></td>
-              <td class="td-links"><a href="https://doi.org/10.1111/1365-2745.13456" target="_blank" rel="noopener">DOI ↗</a></td>
-            </tr>
-
-            <tr>
-              <td class="td-name">Species Composition, Distribution, and Diversity of Woody Species in a Tropical Dry Forest of India</td>
-              <td>Chaturvedi, R.K. et al.</td>
-              <td class="td-year">2014</td>
-              <td><em>Journal of Sustainable Forestry</em></td>
-              <td class="td-links"><a href="https://doi.org/10.1080/10549811.2014.925402" target="_blank" rel="noopener">DOI ↗</a></td>
-            </tr>
-
-            <!-- Add further references below -->
-
-          </tbody>
-        </table>
-      </div>
-
-      <p class="res-note">
-        This is a selection of key references. The full list of literature used in the
-        GBIF ecosystem indicator species methodology is maintained in the
-        <a href="https://github.com/ecoviewer/ecoviewer-gbif-processing" target="_blank" rel="noopener">GBIF Processing repository</a>.
-      </p>
     </div>
   </section>
 
@@ -432,7 +332,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <span class="footer-logo">Eco<em>Viewer</em></span>
-        <p>A multi-source environmental reference library for ecological characterization and satellite imagery annotation.</p>
+        <p>A multi-source environmental reference library for comprehensive ecosystem analysis and geospatial data enhancement.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -440,7 +340,8 @@
           <a href="../">Home</a>
           <a href="../about/">About</a>
           <a href="../team/">Team</a>
-          <a href="../resources/">Resources</a>
+          <a href="../gbif/">GBIF</a>
+          <a href="../environmental-layers/">Environmental Layers</a>
           <a href="../tutorials/">Tutorials</a>
           <a href="../app/">Launch App</a>
         </div>
@@ -454,13 +355,14 @@
         <div class="footer-col">
           <h4>External</h4>
           <a href="https://earthengine.google.com" target="_blank" rel="noopener">Google Earth Engine</a>
-          <a href="https://earthengine.google.com/terms" target="_blank" rel="noopener">GEE Terms</a>
+          <a href="https://www.gbif.org/" target="_blank" rel="noopener">GBIF</a>
+          <a href="https://global-ecosystems.org/" target="_blank" rel="noopener">Global Ecosystem Typology</a>
           <a href="https://www.globalecologylab.org/" target="_blank" rel="noopener">Global Ecology Lab</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 EcoViewer. All rights reserved.</span>
+      <span>© 2026 EcoViewer. All rights reserved.</span>
       <span class="footer-built">Built on Google Earth Engine</span>
     </div>
   </footer>
