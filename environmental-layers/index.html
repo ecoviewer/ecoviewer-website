@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resources — EcoViewer</title>
+  <title>Environmental Layers — EcoViewer</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
@@ -29,301 +30,445 @@
 
   <!-- PAGE HERO -->
   <section class="page-hero">
-
-    <!-- Notice card -->
-    <div style="
-      background-color: #fffaf0; 
-      border-left: 4px solid #d97706; 
-      border-radius: 4px; 
-      padding: 12px 16px; 
-      margin: 20px auto; /* 'auto' centers the block itself horizontally */
-      max-width: 400px;  /* Kept it narrow so it looks tight and clean when centered */
-      font-family: 'Plus Jakarta Sans', sans-serif; 
-      font-size: 14px;
-      color: #78350f;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      justify-content: center; /* Centers the content inside the card */
-      gap: 8px;
-      box-sizing: border-box;
-    ">
-      <span>⚠️</span>
-      <span><strong>Notice:</strong> This page is currently being updated.</span>
-    </div>
-    <!-- Notice card -->
-
     <div class="page-hero-inner">
       <p class="section-tag">// Environmental Layers</p>
-      <h1>Data, methods,<br /><em>and references</em></h1>
+      <h1>Climate, vegetation,<br /><em>water &amp; fire</em></h1>
       <p class="lead">
-        An overview of how EcoViewer is structured, the biodiversity and environmental
-        data that power it, and the scientific literature underpinning the ecosystem indicator species methodology.
+        EcoViewer's environmental layers provide rich contextual information about
+        any location on Earth — from climate and terrain to vegetation structure,
+        surface water, and fire disturbance history. Used alongside GBIF ecosystem
+        indicator species data, they help build a complete picture of what ecosystem
+        is likely present at a given place.
       </p>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section res-structure">
-    <div class="section-inner">
-      <div class="res-structure-text">
-        <p class="section-tag">// How EcoViewer is organised</p>
-        <h2 class="section-title">Biodiversity &amp;<br /><em>environmental layers</em></h2>
+  <!-- INTRO — how layers are organised -->
+  <section class="el-intro section">
+    <div class="el-intro-inner">
+      <div class="el-intro-text">
+        <p class="section-tag">// How it works</p>
+        <h2 class="section-title">Five thematic<br /><em>analysis panels</em></h2>
         <p class="section-body">
-          EcoViewer is organised around two complementary types of data. The first
-          is ecosystem indicator species occurrence data from GBIF, matched to ecosystem types and biomes.
-          The second is a set of environmental layers describing the conditions of
-          a location — its climate, vegetation, water, and fire history.
+          EcoViewer organises environmental data into five thematic panels. Click anywhere
+          on the map and switch between panels to explore different dimensions of the
+          ecosystem at that location. All layers are derived from peer-reviewed, publicly
+          available global datasets, processed and harmonised through Google Earth Engine.
         </p>
         <p class="section-body" style="margin-top:1rem;">
-          Select a location on the map and switch between panels to explore both
-          dimensions together. All layers are derived from peer-reviewed, publicly
-          available datasets processed through Google Earth Engine. Full citations
-          are listed in the sections below.
+          Environmental layers work in tandem with the
+          <a href="../gbif/">GBIF ecosystem indicator species panel</a> — together they
+          provide both the ecological conditions of a place and the species that
+          characterise it.
         </p>
       </div>
-      <div class="res-tabs">
-
-        <div class="res-tab">
-          <div class="res-tab-header">
-            <span class="res-tab-num">01</span>
-            <h3>GBIF Occurrences</h3>
+      <div class="el-tabs">
+        <div class="el-tab">
+          <div class="el-tab-header">
+            <span class="el-tab-num">01</span>
+            <h3>Overview</h3>
           </div>
-          <p>Ecosystem indicator species occurrence records from the Global Biodiversity Information Facility (GBIF), matched to ecosystem types — or to biomes where a specific ecosystem type cannot be determined — using peer-reviewed ecological literature. The presence of these species can signal the likely occurrence of a particular ecosystem type at a location.</p>
-          <div class="res-tab-tags">
-            <span>Species Occurrences</span><span>Ecosystem Indicator Species</span>
-          </div>
+          <p>Location context including latitude, country, ecoregion, elevation, slope, and terrain contours.</p>
         </div>
-
-        <div class="res-tab">
-          <div class="res-tab-header">
-            <span class="res-tab-num">02</span>
-            <h3>Climatic Info</h3>
+        <div class="el-tab">
+          <div class="el-tab-header">
+            <span class="el-tab-num">02</span>
+            <h3>Climate Info</h3>
           </div>
-          <p>Long-term climate variables including mean annual rainfall, temperature seasonality, and aridity indices. Useful for characterising the broad climatic envelope of a location.</p>
-          <div class="res-tab-tags">
-            <span>Rainfall</span><span>Temperature</span><span>Aridity</span>
-          </div>
+          <p>Temperature, precipitation, aridity, and seasonal climate trends from long-term global datasets.</p>
         </div>
-
-        <div class="res-tab">
-          <div class="res-tab-header">
-            <span class="res-tab-num">03</span>
+        <div class="el-tab">
+          <div class="el-tab-header">
+            <span class="el-tab-num">03</span>
             <h3>Vegetation</h3>
           </div>
-          <p>Structural and compositional vegetation attributes including land cover classification, tree canopy cover, and grass layer characteristics. Core inputs for ecological characterisation.</p>
-          <div class="res-tab-tags">
-            <span>Land Cover</span><span>Tree Canopy</span><span>Grass Layer</span>
-          </div>
+          <p>Land cover classification and canopy height, including tree distribution and vegetation structure.</p>
         </div>
-
-        <div class="res-tab">
-          <div class="res-tab-header">
-            <span class="res-tab-num">04</span>
-            <h3>Water &amp; Wetlands</h3>
+        <div class="el-tab">
+          <div class="el-tab-header">
+            <span class="el-tab-num">04</span>
+            <h3>Waterbodies &amp; Wetlands</h3>
           </div>
-          <p>Surface water and wetland extent, including wetland classification, mapped rivers and lakes, seasonal inundation patterns, mangroves, tidal wetlands, and benthic habitats. Essential context for riparian, coastal, and aquatic ecosystems.</p>
-          <div class="res-tab-tags">
-            <span>Wetland Class</span><span>Rivers</span><span>Lakes</span><span>Surface Water</span><span>Mangroves</span>
-          </div>
+          <p>Surface water, wetlands, rivers, mangroves, tidal habitats, and benthic ecosystems.</p>
         </div>
-
-        <div class="res-tab">
-          <div class="res-tab-header">
-            <span class="res-tab-num">05</span>
+        <div class="el-tab">
+          <div class="el-tab-header">
+            <span class="el-tab-num">05</span>
             <h3>Fire Disturbance</h3>
           </div>
-          <p>Historical and recent fire occurrence data, including burn frequency and fire radiative power. Important for understanding disturbance regimes and ecosystem dynamics over time.</p>
-          <div class="res-tab-tags">
-            <span>Burn Frequency</span><span>Fire Radiative Power</span>
-          </div>
+          <p>Active fire detections and burn scar history within a 5 km radius, with seasonal burn patterns.</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ENVIRONMENTAL LAYERS -->
-  <section class="section res-datasets">
-    <div class="res-table-wrap">
-      <div class="res-section-header">
-        <p class="section-tag">// Environmental Layers</p>
-        <h2 class="section-title">Climate, vegetation,<br /><em>water &amp; fire data</em></h2>
-        <p class="section-body">
-          Alongside GBIF occurrence data, EcoViewer provides a set of global environmental
-          layers describing the conditions at any location on Earth — climate, vegetation
-          structure, surface water and coastal extent, and fire disturbance history.
+  <!-- 01 — OVERVIEW -->
+  <section class="el-section el-overview">
+    <div class="el-section-inner">
+      <div class="el-section-content">
+        <p class="section-tag">// 01 — Overview</p>
+        <h2 class="section-title">Location context<br /><em>and terrain</em></h2>
+        <p class="el-section-body">
+          The Overview panel provides essential contextual information about a location before
+          diving into thematic analysis. It reports the latitude, country, and
+          <strong>RESOLVE Ecoregion</strong> — a fine-scale terrestrial biogeographic unit
+          that gives immediate ecological framing for the point of interest.
         </p>
-        <p class="section-body" style="margin-top:1rem;">
-          These layers are derived from established, peer-reviewed global datasets,
-          harmonised and processed through Google Earth Engine. All datasets are
-          publicly available and freely accessible. The table below lists each dataset,
-          its provider, licence, and relevant references.
+        <p class="el-section-body">
+          Elevation and slope are derived from the <strong>NASA SRTM 30 m digital elevation model</strong>,
+          both of which are critical determinants of ecosystem type. Contour lines are also
+          displayed on the map to provide spatial context on the surrounding terrain and landscape.
         </p>
+        <div class="el-ref-card">
+          <div class="el-ref-card-header">Datasets</div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              RESOLVE Ecoregions 2017
+              <span>Dinerstein, E. et al. (2017) · BioScience</span>
+            </div>
+            <span class="el-ref-badge">CC BY 4.0</span>
+            <div class="el-ref-links">
+              <a href="https://ecoregions.appspot.com/" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.1093/biosci/bix014" target="_blank" rel="noopener">Paper ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              NASA SRTM Digital Elevation, 30 m
+              <span>Farr, T.G. et al. (2007) · Reviews of Geophysics</span>
+            </div>
+            <span class="el-ref-badge">Public Domain</span>
+            <div class="el-ref-links">
+              <a href="https://www.earthdata.nasa.gov/data/instruments/srtm" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.1029/2005RG000183" target="_blank" rel="noopener">Paper ↗</a>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="data-table-container">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Dataset</th>
-              <th>Description</th>
-              <th>Provider / Author</th>
-              <th>Licence</th>
-              <th>Links</th>
-            </tr>
-          </thead>
-          <tbody>
-
-            <tr>
-              <td class="td-name">ERA5-Land<br /><span class="td-sub">Climate Reanalysis</span></td>
-              <td>Monthly climate reanalysis data including temperature, precipitation, and related variables at high temporal resolution. Used for the Climatic Info panel.</td>
-              <td>Copernicus Climate Change Service (C3S)</td>
-              <td><span class="td-badge">Copernicus Licence</span></td>
-              <td class="td-links">
-                <a href="https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means" target="_blank" rel="noopener">Dataset ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">CHIRPS Precipitation<br /><span class="td-sub">Pentad v2.0</span></td>
-              <td>Long-term, high-resolution precipitation dataset combining satellite imagery with in-situ station data. Used for the Climatic Info panel.</td>
-              <td>Funk, C. et al. (2015)</td>
-              <td><span class="td-badge">Open Data</span></td>
-              <td class="td-links">
-                <a href="https://www.chc.ucsb.edu/data/chirps" target="_blank" rel="noopener">Dataset ↗</a>
-                <a href="https://doi.org/10.1038/sdata.2015.66" target="_blank" rel="noopener">Paper ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">CHELSA Climate<br /><span class="td-sub">High-Resolution Monthly</span></td>
-              <td>High-resolution monthly climate data, including temperature and precipitation. Used for the Climatic Info panel.</td>
-              <td>Karger, D.N. et al. (2025)</td>
-              <td><span class="td-badge">CC BY 4.0</span></td>
-              <td class="td-links">
-                <a href="https://chelsa-climate.org/" target="_blank" rel="noopener">Dataset ↗</a>
-                <a href="https://doi.org/10.16904/envidat.686" target="_blank" rel="noopener">DOI ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">Global Aridity Index &amp; ET0<br /><span class="td-sub">Version 3.1</span></td>
-              <td>Global aridity index and potential evapotranspiration database. Used for the Climatic Info panel.</td>
-              <td>Zomer, R. &amp; Trabucco, A. (2019)</td>
-              <td><span class="td-badge">CC BY 4.0</span></td>
-              <td class="td-links">
-                <a href="https://doi.org/10.6084/m9.figshare.7504448.v7" target="_blank" rel="noopener">Dataset ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">SBTN Natural Lands Map<br /><span class="td-sub">v1.1</span></td>
-              <td>Global map distinguishing natural and converted land cover. Used for the Vegetation panel.</td>
-              <td>Mazur, E. et al. (2025)</td>
-              <td><span class="td-badge">Open Data</span></td>
-              <td class="td-links">
-                <a href="https://sciencebasedtargetsnetwork.org/resources/" target="_blank" rel="noopener">Website ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">Global Pasture Watch<br /><span class="td-sub">Annual Grasslands v1</span></td>
-              <td>Annual grassland class and extent maps at 30 m resolution (2000–2022). Used for the Vegetation panel's grass layer.</td>
-              <td>Parente, L. et al. (2024)</td>
-              <td><span class="td-badge">CC BY 4.0</span></td>
-              <td class="td-links">
-                <a href="https://doi.org/10.5281/zenodo.13890401" target="_blank" rel="noopener">Dataset ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">RESOLVE Ecoregions<br /><span class="td-sub">2017</span></td>
-              <td>Global terrestrial ecoregion boundaries, used as spatial context across the Vegetation panel and for the ecosystem indicator species matching.</td>
-              <td>Dinerstein, E. et al. (2017)</td>
-              <td><span class="td-badge">CC BY 4.0</span></td>
-              <td class="td-links">
-                <a href="https://ecoregions.appspot.com/" target="_blank" rel="noopener">Dataset ↗</a>
-                <a href="https://doi.org/10.1093/biosci/bix014" target="_blank" rel="noopener">Paper ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">NASA SRTM<br /><span class="td-sub">Digital Elevation, 30m</span></td>
-              <td>Global digital elevation model used for topographic context across multiple panels.</td>
-              <td>Farr, T.G. et al. (2007)</td>
-              <td><span class="td-badge">Public Domain</span></td>
-              <td class="td-links">
-                <a href="https://www.earthdata.nasa.gov/data/instruments/srtm" target="_blank" rel="noopener">Dataset ↗</a>
-                <a href="https://doi.org/10.1029/2005RG000183" target="_blank" rel="noopener">Paper ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">JRC Global Surface Water<br /><span class="td-sub">v1.4</span></td>
-              <td>Surface water presence and seasonality derived from over 30 years of satellite imagery. Used for the Water &amp; Wetlands panel.</td>
-              <td>Pekel, J.F. et al. (2016)</td>
-              <td><span class="td-badge">Copernicus / Open</span></td>
-              <td class="td-links">
-                <a href="https://global-surface-water.appspot.com/" target="_blank" rel="noopener">Dataset ↗</a>
-                <a href="https://doi.org/10.1038/nature20584" target="_blank" rel="noopener">Paper ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">Global Lakes &amp; Wetlands Database<br /><span class="td-sub">GLWD v2</span></td>
-              <td>Global database of lakes, reservoirs, rivers, and wetlands. Used for the Water &amp; Wetlands panel.</td>
-              <td>Lehner, B. et al. (2025)</td>
-              <td><span class="td-badge">Open Data</span></td>
-              <td class="td-links">
-                <a href="https://www.hydrosheds.org/products/glwd" target="_blank" rel="noopener">Dataset ↗</a>
-                <a href="https://doi.org/10.5194/essd-17-2277-2025" target="_blank" rel="noopener">Paper ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">Global River Classification<br /><span class="td-sub">GloRiC</span></td>
-              <td>Global classification of river reaches by hydrological and physical characteristics. Used for the Water &amp; Wetlands panel.</td>
-              <td>Ouellet Dallaire, C. et al. (2019, 2020)</td>
-              <td><span class="td-badge">Open Data</span></td>
-              <td class="td-links">
-                <a href="https://www.hydrosheds.org/products/gloric" target="_blank" rel="noopener">Dataset ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">NASA FIRMS<br /><span class="td-sub">MODIS Active Fire</span></td>
-              <td>Near real-time active fire and hotspot detections. Used for the Fire Disturbance panel.</td>
-              <td>NASA / LANCE / EOSDIS</td>
-              <td><span class="td-badge">Open Data</span></td>
-              <td class="td-links">
-                <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">Dataset ↗</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="td-name">MODIS Burned Area<br /><span class="td-sub">MCD64A1.061</span></td>
-              <td>Monthly burned area product at 500 m resolution. Used for the Fire Disturbance panel.</td>
-              <td>Giglio, L. et al. (2021)</td>
-              <td><span class="td-badge">Public Domain</span></td>
-              <td class="td-links">
-                <a href="https://lpdaac.usgs.gov/products/mcd64a1v061/" target="_blank" rel="noopener">Dataset ↗</a>
-                <a href="https://doi.org/10.5067/MODIS/MCD64A1.061" target="_blank" rel="noopener">DOI ↗</a>
-              </td>
-            </tr>
-
-            <!-- Add further datasets below -->
-
-          </tbody>
-        </table>
+      <div class="el-section-image">
+        <img src="../img/overview.png" alt="Overview panel — EcoViewer" />
+        <p class="el-image-caption">Overview panel showing ecoregion and terrain context</p>
       </div>
+    </div>
+  </section>
 
-      <p class="res-note">
-        If you use EcoViewer in your research, please cite the relevant datasets above
-        alongside the <a href="https://github.com/ecoviewer" target="_blank" rel="noopener">EcoViewer platform</a>.
-        Data is aggregated from third-party sources; users should consult original providers
-        for full licence terms and usage constraints.
-      </p>
+  <!-- 02 — CLIMATE INFO -->
+  <section class="el-section el-climate">
+    <div class="el-section-inner el-section-inner--reverse">
+      <div class="el-section-content">
+        <p class="section-tag">// 02 — Climate Info</p>
+        <h2 class="section-title">Temperature, rainfall,<br /><em>and aridity</em></h2>
+        <p class="el-section-body">
+          The Climate Info panel provides the long-term climate variables most relevant to
+          ecosystem distribution. It reports mean maximum and minimum temperature, annual
+          precipitation, aridity class, aridity index, and average dry months — all key
+          inputs for understanding the climatic envelope of an ecosystem.
+        </p>
+        <p class="el-section-body">
+          Temperature and precipitation statistics are derived from
+          <strong>CHELSA</strong> (Climatologies at High Resolution for the Earth's Land Surface Areas),
+          averaged across 1981–2010. The <strong>aridity index</strong> — the ratio of mean
+          annual precipitation to potential evapotranspiration — provides a numerical measure
+          of dryness: values below 0.03 typically indicate hyper-arid desert conditions.
+        </p>
+        <p class="el-section-body">
+          In colder climates, the panel additionally reports estimated snow days and flags
+          whether the location likely falls within the Polar and cryogenic biome. Users can
+          also generate <strong>interactive climate charts</strong> showing temperature and
+          rainfall trends over the last 10 years. The precipitation chart is derived from
+          <strong>CHIRPS</strong> (Climate Hazards Group InfraRed Precipitation with Stations),
+          a pentad-average dataset freely available in Google Earth Engine. The temperature
+          chart uses the <strong>ERA5-Land</strong> reanalysis dataset. These charts are
+          useful for understanding long-term trends in ecosystem condition and identifying
+          seasonal patterns — particularly when distinguishing fire-season dry periods
+          from wet-season recovery.
+        </p>
+        <div class="el-ref-card">
+          <div class="el-ref-card-header">Datasets</div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              CHELSA High-Resolution Monthly Climate Data
+              <span>Karger, D.N. et al. (2025) · EnviDat</span>
+            </div>
+            <span class="el-ref-badge">CC BY 4.0</span>
+            <div class="el-ref-links">
+              <a href="https://chelsa-climate.org/" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.16904/envidat.686" target="_blank" rel="noopener">DOI ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              CHIRPS Precipitation Pentad v2.0
+              <span>Funk, C. et al. (2015) · Scientific Data</span>
+            </div>
+            <span class="el-ref-badge">Open Data</span>
+            <div class="el-ref-links">
+              <a href="https://www.chc.ucsb.edu/data/chirps" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.1038/sdata.2015.66" target="_blank" rel="noopener">Paper ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              ERA5-Land Monthly Aggregates
+              <span>Copernicus Climate Change Service (C3S) · ECMWF</span>
+            </div>
+            <span class="el-ref-badge">Copernicus Licence</span>
+            <div class="el-ref-links">
+              <a href="https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land-monthly-means" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.24381/cds.e2161bac" target="_blank" rel="noopener">DOI ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              Global Aridity Index &amp; ET0 v3.1
+              <span>Zomer, R. &amp; Trabucco, A. (2019) · figshare</span>
+            </div>
+            <span class="el-ref-badge">CC BY 4.0</span>
+            <div class="el-ref-links">
+              <a href="https://doi.org/10.6084/m9.figshare.7504448.v7" target="_blank" rel="noopener">Dataset ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="el-section-image">
+        <img src="../img/climatic_info.png" alt="Climate Info panel — EcoViewer" />
+        <p class="el-image-caption">Climate Info panel showing temperature and precipitation statistics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 — VEGETATION -->
+  <section class="el-section el-vegetation">
+    <div class="el-section-inner">
+      <div class="el-section-content">
+        <p class="section-tag">// 03 — Vegetation</p>
+        <h2 class="section-title">Land cover<br /><em>and canopy structure</em></h2>
+        <p class="el-section-body">
+          The Vegetation panel moves beyond simple land classification to provide both
+          the type and structural character of vegetation at a location. Land cover is
+          assessed using two complementary datasets: the <strong>SBTN Natural Lands Map</strong>,
+          which distinguishes natural from converted land, and the
+          <strong>ESA WorldCover</strong>, a high-resolution global land classification.
+        </p>
+        <p class="el-section-body">
+          A key feature of this panel is the <strong>tree height distribution graph</strong>,
+          generated on demand for any location. Rather than a flat classification, this
+          provides critical vertical information about vegetation structure — the percentage
+          of trees and shrubs within a 100 m area, broken into three height categories:
+          0–1 m (red), 1–5 m (yellow), and above 5 m (green). This structural detail is
+          often decisive in distinguishing between ecosystem types that share similar
+          climate and species composition.
+        </p>
+        <div class="el-ref-card">
+          <div class="el-ref-card-header">Datasets</div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              SBTN Natural Lands Map v1.1
+              <span>Mazur, E. et al. (2025) · Science Based Targets Network</span>
+            </div>
+            <span class="el-ref-badge">Open Data</span>
+            <div class="el-ref-links">
+              <a href="https://sciencebasedtargetsnetwork.org/resources/" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              ESA WorldCover 2021
+              <span>Zanaga, D. et al. (2022) · ESA / Vito</span>
+            </div>
+            <span class="el-ref-badge">CC BY 4.0</span>
+            <div class="el-ref-links">
+              <a href="https://esa-worldcover.org/" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.5281/zenodo.7254221" target="_blank" rel="noopener">DOI ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              Global Pasture Watch — Annual Grasslands v1
+              <span>Parente, L. et al. (2024) · Zenodo</span>
+            </div>
+            <span class="el-ref-badge">CC BY 4.0</span>
+            <div class="el-ref-links">
+              <a href="https://doi.org/10.5281/zenodo.13890401" target="_blank" rel="noopener">Dataset ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="el-section-image">
+        <img src="../img/vegetation.png" alt="Vegetation panel — EcoViewer" />
+        <p class="el-image-caption">Vegetation panel showing canopy height distribution</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 — WATER & WETLANDS -->
+  <section class="el-section el-water">
+    <div class="el-section-inner el-section-inner--reverse">
+      <div class="el-section-content">
+        <p class="section-tag">// 04 — Waterbodies &amp; Wetlands</p>
+        <h2 class="section-title">Surface water<br /><em>and coastal ecosystems</em></h2>
+        <p class="el-section-body">
+          The Waterbodies &amp; Wetlands panel identifies the potential presence of freshwater,
+          wetland, and coastal ecosystems at a location. It draws on multiple global datasets
+          to cover the full spectrum of aquatic and intertidal environments — from inland
+          lakes and marshes to mangroves and coral reefs.
+        </p>
+        <p class="el-section-body">
+          Wetland type is classified using the <strong>Global Lakes and Wetlands Database</strong>.
+          Intertidal habitat is assessed through the <strong>Murray Intertidal Wetlands Layer</strong>
+          (tidal class) and the <strong>Global Mangrove Watch</strong> for mangrove presence.
+          <strong>Allen Coral Atlas</strong> benthic data identifies reef and seagrass habitats
+          in shallow coastal waters.
+        </p>
+        <p class="el-section-body">
+          The panel also includes a river analysis tool: click "Show River Layer and Analyse"
+          to determine whether the location falls within 250 m of a mapped river, along with
+          hydrological statistics — flow rate, discharge, and elevation — relevant to
+          understanding the river's ecosystem function.
+        </p>
+        <div class="el-ref-card">
+          <div class="el-ref-card-header">Datasets</div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              Global Lakes &amp; Wetlands Database v2 (GLWD)
+              <span>Lehner, B. et al. (2025) · Earth System Science Data</span>
+            </div>
+            <span class="el-ref-badge">Open Data</span>
+            <div class="el-ref-links">
+              <a href="https://www.hydrosheds.org/products/glwd" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.5194/essd-17-2277-2025" target="_blank" rel="noopener">Paper ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              JRC Global Surface Water v1.4
+              <span>Pekel, J.F. et al. (2016) · Nature</span>
+            </div>
+            <span class="el-ref-badge">Copernicus / Open</span>
+            <div class="el-ref-links">
+              <a href="https://global-surface-water.appspot.com/" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.1038/nature20584" target="_blank" rel="noopener">Paper ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              Global River Classification (GloRiC)
+              <span>Ouellet Dallaire, C. et al. (2019, 2020) · HydroSHEDS</span>
+            </div>
+            <span class="el-ref-badge">Open Data</span>
+            <div class="el-ref-links">
+              <a href="https://www.hydrosheds.org/products/gloric" target="_blank" rel="noopener">Dataset ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              Murray Intertidal Wetlands
+              <span>Murray, N.J. et al. · Global Wetlands Project</span>
+            </div>
+            <span class="el-ref-badge">Open Data</span>
+            <div class="el-ref-links">
+              <a href="https://www.globalwetlandsproject.org/" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              Global Mangrove Watch
+              <span>JAXA / Aberystwyth University</span>
+            </div>
+            <span class="el-ref-badge">Open Data</span>
+            <div class="el-ref-links">
+              <a href="https://www.globalmangrovewatch.org/" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              Allen Coral Atlas — Benthic Habitat
+              <span>Allen Coral Atlas / Planet / Arizona State University</span>
+            </div>
+            <span class="el-ref-badge">CC BY 4.0</span>
+            <div class="el-ref-links">
+              <a href="https://allencoralatlas.org/" target="_blank" rel="noopener">Website ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="el-section-image">
+        <img src="../img/waterbodies_and_wetlands.png" alt="Waterbodies and Wetlands panel — EcoViewer" />
+        <p class="el-image-caption">Waterbodies &amp; Wetlands panel showing wetland classification and river analysis</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 — FIRE DISTURBANCE -->
+  <section class="el-section el-fire">
+    <div class="el-section-inner">
+      <div class="el-section-content">
+        <p class="section-tag">// 05 — Fire Disturbance</p>
+        <h2 class="section-title">Fire frequency<br /><em>and burn history</em></h2>
+        <p class="el-section-body">
+          The Fire Disturbance panel maps the frequency of active fires and burn scars
+          within a 5 km radius of a selected location. Fire is a fundamental ecological
+          process in many ecosystem types — distinguishing fire-adapted savannas from
+          forests, for example — and its frequency and seasonality are key signals in
+          ecosystem characterisation.
+        </p>
+        <p class="el-section-body">
+          Two datasets are used in combination: the <strong>VIIRS</strong> (Visible
+          Infrared Imaging Radiometer Suite) sensor for active fire detections, and
+          <strong>MODIS Burned Area</strong> for historical burn scars. A heatmap shows
+          pixels detected by each sensor, with overlapping detections indicating
+          higher confidence of fire occurrence.
+        </p>
+        <p class="el-section-body">
+          The panel also shows <strong>burn seasonality</strong> — which months are
+          typically prone to fire at a location. Comparing this with the Climate Info
+          panel's seasonal rainfall chart can help determine whether fires are
+          natural (dry-season fires in fire-adapted ecosystems) or potentially
+          anthropogenic in origin — an important ecological distinction.
+        </p>
+        <div class="el-ref-card">
+          <div class="el-ref-card-header">Datasets</div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              NASA FIRMS — VIIRS Active Fire Detections
+              <span>NASA / LANCE / EOSDIS</span>
+            </div>
+            <span class="el-ref-badge">Open Data</span>
+            <div class="el-ref-links">
+              <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank" rel="noopener">Dataset ↗</a>
+            </div>
+          </div>
+          <div class="el-ref-item">
+            <div class="el-ref-name">
+              MODIS Burned Area Monthly MCD64A1.061
+              <span>Giglio, L. et al. (2021) · NASA EOSDIS LP DAAC</span>
+            </div>
+            <span class="el-ref-badge">Public Domain</span>
+            <div class="el-ref-links">
+              <a href="https://lpdaac.usgs.gov/products/mcd64a1v061/" target="_blank" rel="noopener">Dataset ↗</a>
+              <a href="https://doi.org/10.5067/MODIS/MCD64A1.061" target="_blank" rel="noopener">DOI ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="el-section-image">
+        <img src="../img/fire.png" alt="Fire Disturbance panel — EcoViewer" />
+        <p class="el-image-caption">Fire Disturbance panel showing burn frequency heatmap and seasonality</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITE NOTE -->
+  <section class="el-section el-cite-note">
+    <div class="el-section-inner">
+      <div class="el-section-content">
+        <div class="el-cite-note">
+          If you use EcoViewer in your research, please cite the relevant datasets above alongside the
+          <a href="https://github.com/ecoviewer" target="_blank" rel="noopener">EcoViewer platform</a>.
+          Data is aggregated from third-party sources; users should consult original providers for full
+          licence terms and usage constraints.
+        </div>
+      </div>
     </div>
   </section>
 
